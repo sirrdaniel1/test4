@@ -245,6 +245,16 @@ body {
         flex-wrap: nowrap;
     }
 
+    .header-icons a {
+        width: auto;
+        text-align: center;
+        padding: 0.55rem 0.75rem;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.08);
+        min-width: 78px;
+        font-size: 0.95rem;
+    }
+
     .container {
         width: calc(100% - 1.5rem);
         padding: 1rem;
