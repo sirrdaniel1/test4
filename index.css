@@ -463,7 +463,7 @@ body {
 /* Improve tap targets and spacing on small phones */
 @media (max-width: 420px) {
     header {
-        padding: 10rem 0.5rem;
+        padding: 3rem 0.5rem;
         justify-content: space-between;
     }
 
