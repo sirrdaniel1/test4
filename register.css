@@ -222,8 +222,15 @@ body {
     }
 
     .footer-content {
+        /* Stack footer sections on narrower screens */
+        flex-direction: column;
         flex-wrap: wrap;
-        gap: 1rem 2rem;
+        gap: 1rem;
+        align-items: stretch;
+    }
+    .footer-section {
+        flex: 1 1 auto;
+        margin-right: 0;
     }
 }
 
