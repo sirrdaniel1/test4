@@ -1,0 +1,218 @@
+body {
+    background-color: #f7f5f2;
+}
+
+.shirt-hero {
+    background: linear-gradient(135deg, #1b1613, #4b2f24);
+    color: white;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.shirt-hero-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.shirt-hero-content p {
+    font-size: 1rem;
+    color: #f2e7dc;
+}
+
+.hero-badge {
+    background: rgba(255,255,255,0.12);
+    padding: 1.1rem 1.3rem;
+    border-radius: 999px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.products-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+}
+
+.section-head {
+    margin-bottom: 1.5rem;
+}
+
+.section-head h2 {
+    margin-bottom: 0.25rem;
+    color: #222;
+}
+
+.section-head p {
+    color: #666;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+    border: 1px solid #ddd;
+    background: white;
+    color: #222;
+    padding: 0.6rem 0.45rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease;
+    width: auto;
+    font-size: 0.95rem;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #000;
+    color: white;
+    border-color: #000;
+}
+
+.filter-bar .filter-btn {
+    flex: 0 0 auto;
+    min-width: 60px;
+}
+
+@media (max-width: 600px) {
+    .filter-bar {
+        flex-wrap: nowrap;
+    }
+    .filter-btn {
+        padding: 0.5rem 0.35rem;
+        font-size: 0.92rem;
+    }
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Keep footer sections in one row on small screens */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-wrap: nowrap !important;
+        justify-content: space-between !important;
+        gap: 0.75rem !important;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .footer-section {
+        flex: 1 1 0 !important;
+        min-width: 0 !important;
+        margin-right: 0.5rem;
+    }
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-body {
+    padding: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    background: #f8e7de;
+    color: #b6452a;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    margin-bottom: 0.6rem;
+}
+
+.product-body h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.product-body p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: 700;
+    color: #111;
+}
+
+.buy-btn {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.buy-btn:hover {
+    background: #b1b1b1;
+}
+
+@media (max-width: 780px) {
+    .shirt-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2.5rem 1.25rem;
+    }
+
+    .hero-badge {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .products-section {
+        padding: 1.5rem 1rem 3rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .buy-btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCMN | Cart</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="HCMN Logo">
+        </a>
+
+        <div class="search">
+            <img class="search-icon" src="images/search-icon.png" alt="Search Icon">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="header-icons">
+            <a href="login.html">Log in</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <section class="cart-card">
+            <div class="cart-heading">
+                <p class="eyebrow">Your cart</p>
+                <h1>Items ready to buy</h1>
+            </div>
+
+            <div id="ordersSection" class="orders-section hidden">
+                <p class="order-eyebrow">Confirmed orders</p>
+                <div id="ordersList" class="orders-list"></div>
+            </div>
+
+            <div id="cartItems" class="cart-items"></div>
+
+            <div id="cartEmpty" class="empty-state">Your cart is empty. Add items from the checkout page.</div>
+
+            <div class="cart-summary">
+                <p>Total</p>
+                <p id="cartTotal">EGP 0</p>
+            </div>
+
+            <div class="cart-actions">
+                <button id="clearCartBtn" class="primary-btn" type="button">Clear cart</button>
+                <button id="confirmOrderBtn" class="primary-btn" type="button">Confirm order</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="cart.js"></script>
+</body>
+</html>

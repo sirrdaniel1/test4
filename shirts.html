@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCMN T-Shirts</title>
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+
+    <!-- Main site styles -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Page-specific styles -->
+    <link rel="stylesheet" href="shirts.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="HCMN Logo">
+        </a>
+
+        <div class="search">
+            <img class="search-icon" src="images/search-icon.png" alt="Search Icon">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="header-icons">
+            <a href="login.html">Log in</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="shirt-hero">
+            <div class="shirt-hero-content">
+                <h1>Premium T-Shirts</h1>
+                <p>Discover stylish, comfortable, and modern t-shirts for everyday wear.</p>
+            </div>
+            <div class="hero-badge"> New Drops • Fresh Styles </div>
+        </section>
+
+        <section class="products-section">
+            <div class="section-head">
+                <div>
+                    <h2>Our T-Shirts Collection</h2>
+                    <p>Explore the latest picks from HCMN.</p>
+                </div>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="new">New</button>
+                <button class="filter-btn" data-filter="best-seller">Best Seller</button>
+            </div>
+
+            <div id="productGrid" class="product-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="contact" class="footer-content">
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#help">Help Center</a></li>
+                    <li><a href="#returns">Returns</a></li>
+                    <li><a href="#shipping">Shipping Info</a></li>
+                </ul>
+            </div>
+
+            <!-- About Us removed per design -->
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100083231447151&rdid=j3qes7bVLxW43WEi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1HKS9dJZa6%2F%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio#">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/hcmn.eg/">Instagram</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>HCMN.EG@gmail.com</p>
+                <p>Phone: +20 1080185512</p>
+                <p>&copy; 2025 HCMN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="shirts.js" defer></script>
+</body>
+</html>
