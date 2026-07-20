@@ -339,13 +339,16 @@ body {
 
 @media (max-width: 600px) {
     header {
-        padding: 0.9rem 0.75rem;
+        padding: 1rem 0.75rem;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
         gap: 0.45rem;
     }
-
+    nav{
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+    }
     .logo img {
         height: 44px;
     }
