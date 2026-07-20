@@ -463,10 +463,13 @@ body {
 /* Improve tap targets and spacing on small phones */
 @media (max-width: 420px) {
     header {
-        padding: 0.55rem 0.5rem;
+        padding: 1rem 0.5rem;
         justify-content: space-between;
     }
-
+    nav{
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+    }
     .logo img {
         height: 38px;
     }
