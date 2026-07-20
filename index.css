@@ -463,11 +463,8 @@ body {
 /* Improve tap targets and spacing on small phones */
 @media (max-width: 420px) {
     header {
-        padding: 1rem 0.1rem;
+        padding: 0.55rem 0.5rem;
         justify-content: space-between;
-    }
-    nav{
-        padding: 0.1rem 2rem
     }
 
     .logo img {
@@ -506,6 +503,11 @@ body {
     .product img {
         height: 180px;
     }
+
+    .product-grid {
+        gap: 1rem;
+    }
+}
 
     .product-grid {
         gap: 1rem;
